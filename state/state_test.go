@@ -1,6 +1,12 @@
-package state
+ package state
 
-func ViewState() string {
-    // Sjekke data som er lagret ("kylling til venstre", "rev til venstre")
-    return "[kylling rev korn hs ---\\ \\__/ _________________/---]"
+import "testing"
+
+
+func TestViewState(t *testing.T) {
+    wanted := "[kylling rev korn hs ---\\ \\__/ _________________/---]"
+    state := ViewState();
+    if state != wanted {
+         t.Errorf("Feil, fikk %q, ønsket %q.", state, wanted)
+    }
 }
