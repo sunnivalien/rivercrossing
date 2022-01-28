@@ -19,3 +19,11 @@ func TestPutInBoat(t *testing.T) {
 		t.Errorf("Feil, fikk %q, ønsket %q.", state, wanted)
 	}
 }
+
+func TestCrossRiver(t *testing.T) {
+	wanted := "test"
+	state := CrossRiver()
+	if state != wanted {
+		t.Errorf("Feil, fikk %q, ønsket %q.", state, wanted)
+	}
+}
