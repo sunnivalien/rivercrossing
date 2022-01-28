@@ -6,7 +6,7 @@ func ViewState() string {
 }
 
 func PutInBoat() string {
-	return "sau"
+	return "rev"
 }
 
 func CrossRiver() string {
